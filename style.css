@@ -160,7 +160,7 @@
 .lowdown_textflexbox {
   position: absolute;
   align-items: center;
-  bottom: 50px;
+  bottom: 30px;
   left: 30px;
   flex-direction: row;
   gap: 1rem;
@@ -172,7 +172,7 @@
   font-weight: 700;
   margin-top: 1rem;
   display: inline-block;
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 2rem 1rem 2rem;
   text-decoration: none;
   border: 3px solid #090909;
   background-color: #ffffff;
