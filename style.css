@@ -13,16 +13,16 @@
   height: 100px;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   background-color: rgb(98, 101, 101);
 }
 .main-navbar-linktext {
   font-family: monospace;
   text-align: center;
-  gap: 2rem;
-  padding: 5px;
-  font-size: 22px;
+  gap: 1rem;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
   color: #fe9403;
   text-decoration: none;
 }
