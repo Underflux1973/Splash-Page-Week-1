@@ -1,92 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Bassface - DnB Culture, Sounds and People</title>
-  </head>
-  <body>
-    <div>
-    
-    <header class="HeaderLogoFlex">
-      <img src="./media/DeeJay_Recordings_Logo.jpg" alt="Bassface_Logo" width="100" />
-      <div class="main-navbar-flexcontainer">
-        <a href class="main-navbar-linktext"></a>
-        <div><a href class="main-navbar-linktext" href="#top">About</a></div>
-        <div>
-          <a href class="main-navbar-linktext" href="#events">Events</a>
-        </div>
-        <div><a href class="main-navbar-linktext" href="#news">Lowdown</a></div>
-        <div>
-          <a href class="main-navbar-linktext" href="#dnbhistory"
-            >Foundations</a
-          >
-        </div>
-        <div>
-          <a href class="main-navbar-linktext" href="#top5records"
-            >Top 5 Records</a
-          >
-        </div>
-        <div>
-          <a href class="main-navbar-linktext" href="#artistprofile"
-            >Artist Profile</a
-          >
-        </div>
-        <audio controls autoplay src="./media/Watch The Ride_Mash up the Dance.mp3"></audio>
-      </div>
-    </header>
-    <main id="top">
-      <section class="mainfeature image-soundsystem">
-        <div class="mainfeature_textflexbox">
-          <h1 class="mainfeature_headline">DRUM & BASS FOUNDATIONS</h1>
-          <h2 class="mainfeature_subheadline">Immerse yourself into DnB culture as we go deep into the scene connecting all the dots that make our vibrant scene what it is today. Explore the cultural roots as seen from the perspective of the founding pioneers.</h2>
-          <a class="mainfeature_readmore" href="#">Read More</a>
-        </div>
-      </section>
-<section id="events" class="events image-printworks">
-    <div class="events_textflexbox">
-      <h1 class="events_headline">CURRATED DNB EVENTS</h1>
-      <h2 class="events_subheadline">We support grass root club nights through the UK. They helped create the scene as it is today. Discover our carefully currated DnB nights around the UK.</h2>
-      <a class="events_readmore" href="#">Buy tickets</a>
-    </div>
-</section>
-<section id="lowdown" class="events randall-rip">
-  <div class="lowdown_textflexbox">
-    <h1 class="lowdown_headline">TOO HOT TO HANDLE!</h1>
-    <h2 class="lowdown_subheadline">A dedication to music soldier, DJ Randall. Known as the DJ's DJ, he will be sorely missed. This is a celebration of everything that he contributed to the scene.</h2>
-    <a class="lowdown_readmore" href="#">Read more</a>
-  </div>
-</section>
-<section id="artistprofile" class="artistprofile brukrogers-zerot">
-  <div class="artistprofile_textflexbox">
-    <h1 class="artistprofile_headline">Bruk Rogers</h1>
-    <h2 class="artistprofile_subheadline">The prolific producer Zero T stands at the top of his tree with his Drum and Bass output. He is also an outstanding producer in other genres including broken beat under his alter ego Bruk Rogers. </h2>
-    <a class="artistprofile_readmore" href="#">Find out more</a>
-  </div>
-</section>
-    </main>
-<footer>
-  <section>
-    <div class="footer-container">
-      <a class="link footer-left" href="index.html">Alex Buck</a>
-      <div class="footer-icons">
-        <ul>
-          <li><a href="https://https://soundcloud.com/underflux" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a></li>
-          <li><a href="https://https://www.instagram.com/_underflux/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-          <li><a href="hhttps://www.facebook.com/underflux/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-      </ul>
-      </div>
-      <a class="link footer-right" href="contact.html">contact</a>
-    </div>
+.HeaderLogoFlex {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+  gap: 1rem;
+  z-index: 1;
+}
+.main-navbar-flexcontainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgb(98, 101, 101);
+}
+.main-navbar-linktext {
+  font-family: monospace;
+  text-align: center;
+  gap: 2rem;
+  padding: 5px;
+  font-size: 22px;
+  color: #fe9403;
+  text-decoration: none;
+}
+.main-navbar-linktext:hover {
+  text-decoration: underline;
+}
 
-  <div class="copyright">
-    <p style="color: #95AAB6;">
-      2024 &copy by Alex Buck
-    </p>
-  </div>
-  </section>
-</footer>
-  </body>
+.image-soundsystem {
+  background-image: url(./media/Soundsystem_culture.jpg);
+}
+.mainfeature {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.section {
+  display: block;
+  unicode-bidi: isolate;
+}
+.mainfeature_textflexbox {
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 30px;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000000;
+}
+.mainfeature_headline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.mainfeature_subheadline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: inline-block;
+  border: 3px solid #090909;
+  padding: 2rem 1rem 2rem 1rem;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
 
-</html>
+.mainfeature_readmore {
+  font-size: 20px;
+  color: #fbf9f7;
+  margin-top: 1rem;
+  display: inline-block;
+  max-width: 350px;
+  font-weight: 900;
+  border: 3px solid #000000;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  background-color: #fe9403;
+}
+.image-printworks {
+  background-image: url(./media/Printworks_events.webp);
+}
+.events {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.section {
+  display: block;
+  unicode-bidi: isolate;
+}
+.events_textflexbox {
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 30px;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000000;
+}
+.events_headline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.events_subheadline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: inline-block;
+  border: 3px solid #090909;
+  padding: 2rem 1rem 2rem 1rem;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.events_readmore {
+  font-size: 20px;
+  color: #fbf9f7;
+  margin-top: 1rem;
+  display: inline-block;
+  max-width: 350px;
+  font-weight: 900;
+  border: 3px solid #000000;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  background-color: #fe9403;
+}
+.randall-rip {
+  background-image: url(./media/DJ_Randall_RIP.jpg);
+}
+.lowdown {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.section {
+  display: block;
+  unicode-bidi: isolate;
+}
+.lowdown_textflexbox {
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 30px;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000000;
+}
+.lowdown_headline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.lowdown_subheadline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: inline-block;
+  border: 3px solid #090909;
+  padding: 2rem 1rem 2rem 1rem;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.lowdown_readmore {
+  font-size: 20px;
+  color: #fbf9f7;
+  margin-top: 1rem;
+  display: inline-block;
+  max-width: 350px;
+  font-weight: 900;
+  border: 3px solid #000000;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  background-color: #fe9403;
+}
+.brukrogers-zerot {
+  background-image: url(./media/Bruk_Rogers_artist-profile.webp);
+}
+.artistprofile {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.section {
+  display: block;
+  unicode-bidi: isolate;
+}
+.artistprofile_textflexbox {
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 30px;
+  flex-direction: row;
+  gap: 1rem;
+  color: #000000;
+}
+.artistprofile_headline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.artistprofile_subheadline {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: inline-block;
+  border: 3px solid #090909;
+  padding: 2rem 1rem 2rem 1rem;
+  border: 3px solid #090909;
+  background-color: #ffffff;
+}
+.artistprofile_readmore {
+  font-size: 20px;
+  color: #fbf9f7;
+  margin-top: 1rem;
+  display: inline-block;
+  max-width: 350px;
+  font-weight: 900;
+  border: 3px solid #000000;
+  padding: 1rem 4rem 1rem 4rem;
+  text-decoration: none;
+  background-color: #fe9403;
+}
+.section {
+  display: block;
+  unicode-bidi: isolate;
+}
+.footer {
+  text-align: center;
+}
+
+.footer-container {
+  background-color: #fe9403;
+  display: flex;
+}
+
+.footer-container a {
+  color: hsl(0, 0%, 100%);
+  padding: 42px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.footer-left {
+  margin-right: auto;
+}
+
+.fa:hover {
+  color: hsl(60, 1%, 38%);
+}
+
+.footer-icons {
+  justify-content: space-between;
+  padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+  list-style-type: none;
+}
+
+.footer-icons li {
+  display: inline-block;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.copyright {
+  background-color: #fffefe;
+  overflow: hidden;
+}
